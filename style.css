@@ -1,0 +1,40 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #07252d;
+}
+h2{
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #008);
+    line-height: 0.70em;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,18%,20%,50%,60%,65%,80%,90%,92%{
+        color: #0e3742;
+        text-shadow: none;
+    }
+    18%,20%,30%,50%,60%,65%,80%,90%,92%,100%{
+        color: white;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 800px #03bcf4,
+        0 0 160px #03bcf4;
+        }
+}
